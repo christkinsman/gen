@@ -1,0 +1,89 @@
+
+
+<html lang="en">
+
+<head>
+<title>gen</title>
+
+<link rel="stylesheet" href="gen.css">
+
+</head>
+
+<body>
+
+	<div class="body-wrapper">
+
+		<h1>Random Pattern Generator</h1>
+
+		<canvas id="myCanvas"></canvas>
+
+		<div class="container">
+
+			<div class="row">
+				<button onclick="draw()">New Pattern</button>
+			</div>
+
+			<h3>
+				Preset Pattern Values
+			</h3>
+
+			<div class="btn-container">
+				<button class="btn" onclick="btn1()">1</button>
+				<button class="btn" onclick="btn2()">2</button>
+				<button class="btn" onclick="btn3()">3</button>
+				<button class="btn" onclick="btn4()">4</button>
+			</div>
+
+			<h3>
+				Custom Pattern Values
+			</h3>
+
+			<div class="row">
+				<label class="mar-0" for="gridSize">Grid size: </label>
+				<input onclick="draw()" type="range" min="0" max="20" value="8" class="slider" id="gridSize">
+			</div>
+			<div class="row">
+				<label class="mar-0" for="division">Division: </label>
+				<input onclick="draw()" type="range" min="1" max="12" value="2" class="slider" id="division">
+			</div>
+			<div class="row">
+				<label class="mar-0" for="rings">Rings: </label>
+				<input onclick="draw()" type="range" min="1" max="24" value="2" class="slider" id="rings">
+			</div>
+
+			<div class="row">
+				<label class="mar-0" for="cubeCount">Cube count: </label>
+				<input onclick="draw()" type="range" min="0" max="100" value="4" class="slider" id="cubeCount">
+			</div>
+
+			<div class="row">
+				<label class="mar-0" for="diamondCount">Diamond count: </label>
+				<input onclick="draw()" type="range" min="0" max="100" value="0" class="slider" id="diamondCount">
+			</div>
+
+			<div class="row">
+				<label class="mar-0" for="circleCount">Circle count: </label>
+				<input onclick="draw()" type="range" min="0" max="100" value="2" class="slider" id="circleCount">
+			</div>
+
+			<div class="row">
+				<p class="mar-0">Grid style: </p>
+				<select id="gridSelect">
+					<option value="dot">dot</option>
+				    <option value="grid">grid</option>
+				</select>
+			</div>
+
+		</div>
+
+	</div>
+
+<script src="gen.js"></script>
+
+
+
+</body>
+
+</html>
+
+

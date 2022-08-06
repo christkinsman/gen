@@ -1,0 +1,51 @@
+
+body {
+    background-color: white;
+    font-family: arial;
+}
+
+.mar-0 {
+	margin: 0;
+}
+
+.body-wrapper {
+	width: 100%;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+#myCanvas {
+    border: 1px solid black;
+    display: block
+    margin: 0 auto !important;
+}
+
+.container {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.row > * {
+	display: inline-block;
+}
+.row {
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.btn-container {
+	width: 100%;
+	display: flex;
+}
+.btn {
+	width: 25%;
+	border-radius: 0px;
+	border: 1px solid black;
+	margin: 1px;
+}
+.btn:hover {
+	cursor: pointer;
+	background-color: white;
+}
+
+
